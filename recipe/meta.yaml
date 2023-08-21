@@ -42,8 +42,12 @@ requirements:
     - python
 
 test:
+  imports:
+    - pdal
+  requirements:
+    - pip
   commands:
-    - python -c "import pdal"
+    - pip check
 
 about:
   home: https://pdal.io
