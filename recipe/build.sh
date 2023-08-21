@@ -14,7 +14,7 @@ fi
 # scikit-build only passes PYTHON_EXECUTABLE and doesn't pass Python3_EXECUTABLE
 export CMAKE_ARGS="${CMAKE_ARGS} -DPDAL_DIR=$PREFIX -LAH"
 
-${PYTHON} -m pip install . -v
+${PYTHON} -m pip install . -v --no-deps --no-build-isolation
 
 mkdir plugins && cd plugins
 curl -OL https://files.pythonhosted.org/packages/66/e6/377c308a7f7d7f2a97008721e83061308a56e23f6be3b07989d44a4cfa9a/pdal-plugins-1.2.0.tar.gz
