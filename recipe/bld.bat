@@ -10,7 +10,7 @@ curl -OL https://files.pythonhosted.org/packages/18/6c/1077b11602cac1f11e0c80a7c
 tar xvf pdal-plugins-1.1.0.tar.gz
 cd pdal-plugins-1.1.0
 
-%PYTHON% -m pip install . -v
+%PYTHON% -m pip install . --no-deps --no-build-isolation -v
 cd ../..
 
 set ACTIVATE_DIR=%PREFIX%\etc\conda\activate.d

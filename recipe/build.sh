@@ -26,7 +26,7 @@ cd pdal-plugins-1.2.0
 #rm $BUILD_PREFIX/lib/libpython*
 #fi
 
-${PYTHON} -m pip install . -vv
+${PYTHON} -m pip install . --no-deps --no-build-isolation -vv
 cd ../..
 
 ACTIVATE_DIR=$PREFIX/etc/conda/activate.d
