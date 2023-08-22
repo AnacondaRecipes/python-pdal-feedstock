@@ -42,7 +42,7 @@ requirements:
 test:
   imports:
     - pdal
-  requirements:
+  requires:
     - pip
   commands:
     - pip check
@@ -50,6 +50,7 @@ test:
 about:
   home: https://pdal.io
   license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE.txt
   summary: Point Data Abstraction Library (PDAL) Python Package
   description: |
