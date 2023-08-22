@@ -20,7 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - make
+    - make  # [unix]
     - curl
     - cmake
     - pdal
