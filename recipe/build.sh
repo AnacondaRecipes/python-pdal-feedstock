@@ -16,19 +16,6 @@ export CMAKE_ARGS="${CMAKE_ARGS} -DPDAL_DIR=$PREFIX -LAH"
 
 ${PYTHON} -m pip install . -v --no-deps --no-build-isolation
 
-mkdir plugins && cd plugins
-curl -OL https://files.pythonhosted.org/packages/66/e6/377c308a7f7d7f2a97008721e83061308a56e23f6be3b07989d44a4cfa9a/pdal-plugins-1.2.0.tar.gz
-tar xvf pdal-plugins-1.2.0.tar.gz
-cd pdal-plugins-1.2.0
-
-#if [ "$CONDA_BUILD_CROSS_COMPILATION" == "1" ]; then
-#rm $BUILD_PREFIX/lib/libpdal*
-#rm $BUILD_PREFIX/lib/libpython*
-#fi
-
-${PYTHON} -m pip install . --no-deps --no-build-isolation -vv
-cd ../..
-
 ACTIVATE_DIR=$PREFIX/etc/conda/activate.d
 DEACTIVATE_DIR=$PREFIX/etc/conda/deactivate.d
 mkdir -p $ACTIVATE_DIR
