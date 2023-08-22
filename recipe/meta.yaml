@@ -22,17 +22,17 @@ requirements:
     - {{ compiler('cxx') }}
     - make  # [unix]
     - cmake
-    - pdal
+    - pdal 2.5.3
     - ninja
-    - scikit-build
+    - scikit-build 0.15.0
 
   host:
     - python
-    - pdal
+    - pdal 2.5.3
     - numpy
     - pip
     - pybind11
-    - scikit-build
+    - scikit-build 0.15.0
   run:
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('pdal', max_pin='x.x') }}
