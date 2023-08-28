@@ -1,6 +1,6 @@
 
 set CMAKE_GENERATOR=Ninja
-%PYTHON% setup.py install -vv --no-deps --no-build-isolation
+%PYTHON% setup.py install -vv --no-deps --no-build-isolation -DPython3_EXECUTABLE="%PYTHON%"
 
 set ACTIVATE_DIR=%PREFIX%\etc\conda\activate.d
 set DEACTIVATE_DIR=%PREFIX%\etc\conda\deactivate.d
