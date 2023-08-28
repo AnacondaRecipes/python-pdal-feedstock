@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [(win and vc<14) or s390x or py<38]
+  skip: true  # [win or s390x or py<38]
 
 
 requirements:
