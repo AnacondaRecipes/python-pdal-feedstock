@@ -13,6 +13,8 @@ source:
 
 build:
   number: 0
+  # Windows build fails to import. Multiple similar issues have been closed without resolution.
+  # See here: https://github.com/PDAL/python/issues/144
   skip: true  # [win or s390x or py<38]
 
 
