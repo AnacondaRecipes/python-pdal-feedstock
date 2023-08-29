@@ -23,7 +23,6 @@ requirements:
     - cmake
     - pdal 2.5.3
     - ninja
-    - scikit-build 0.15.0
 
   host:
     - python
